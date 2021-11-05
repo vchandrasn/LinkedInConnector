@@ -19,7 +19,7 @@ namespace LinkedInConnector
 {
     public static class PostCmpContentToLinkedIn
     {
-        private const string LinkedInAuthToken = "<Copy OAuth Token value here>";
+        private static string LinkedInAuthToken = AppSettings.LinkedInOAuthToken;
 
         [FunctionName("PostCmpContentToLinkedIn")]
         public static async Task Run([ServiceBusTrigger("linkedIn", "sch", Connection = "ServiceBusConnection")]string mySbMsg, ILogger log)

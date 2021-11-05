@@ -33,5 +33,6 @@ namespace LinkedInConnector.Utils
         public static string Username => $"{Configuration["Values:MUsername"]}";
         public static string Password => $"{Configuration["Values:MPassword"]}";
         public static string LinkedInPersonId => $"{Configuration["Values:LinkedInPersonId"]}";
+        public static string LinkedInOAuthToken => $"{Configuration["Values:LinkedInOAuthToken"]}";
     }
 }
